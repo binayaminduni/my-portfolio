@@ -4,34 +4,27 @@
 <title>Binaya Minduni Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body{background:#E8DCC6;display:flex;justify-content:center;padding:20px;margin:0;overflow-x:hidden}
-.main{
-background:#FFF8E8;
-width:100%;max-width:700px;
-padding:30px 25px 160px 25px;
-position:relative;
-border:2.5px solid #3a2e26;
-border-radius:38px 42px 35px 45px / 45px 35px 42px 38px;
-box-shadow:8px 8px 0 #3a2e26;
-z-index:2;
-overflow:hidden
-}
-h1.portfolio{text-align:center;font-family:Arial,sans-serif;font-weight:normal;margin-bottom:25px;font-size:28px}
-.info-box{border:2px solid #5a4632;border-radius:22px;padding:15px 18px;margin-bottom:20px;font-family:"Comic Sans MS", cursive, sans-serif;line-height:1.6;background:#fffdf5;font-size:15px}
-.skills-title, .cert-title, .github-title{font-family:Arial, Helvetica, sans-serif;font-size:17px;margin:24px 0 10px 0}
+body{background:#E8DCC6;display:flex;justify-content:center;padding:20px;margin:0}
+.main{background:#FFF8E8;width:100%;max-width:700px;padding:35px 28px 185px 28px;position:relative;border:2.5px solid #3a2e26;border-radius:38px 42px 35px 45px / 45px 35px 42px 38px;box-shadow:8px 8px 0 #3a2e26;overflow:hidden}
+h1.portfolio{text-align:center;font-family:Arial,sans-serif;font-weight:normal;margin-bottom:28px;font-size:28px}
+.info-box{border:2px solid #5a4632;border-radius:22px;padding:15px 18px;margin-bottom:22px;font-family:"Comic Sans MS", cursive, sans-serif;line-height:1.6;background:#fffdf5;font-size:15px}
+.skills-title, .cert-title, .github-title{font-family:Arial, Helvetica, sans-serif;font-size:17px;margin:26px 0 10px 0}
 .skills-title::before, .cert-title::before, .github-title::before{content:"★ ";}
 .badges{display:flex;gap:10px;flex-wrap:wrap}
 .badge{border:1.5px solid #3a2e26;border-radius:50%;padding:6px 14px;font-family:Arial, Helvetica, sans-serif;background:#fffdf5;font-size:14px}
 .cert-box{border:2px solid #5a4632;border-radius:16px;padding:14px 16px;margin:14px 0;background:#fffdf5;cursor:pointer;font-family:Arial, Helvetica, sans-serif}
 .cert-box small{border:1.5px solid #3a2e26;padding:2px 6px;border-radius:4px;font-size:12px;display:inline-block;margin-top:6px}
-.github-btn{border:1.5px solid #3a2e26;border-radius:20px;padding:8px 18px;background:#fffdf5;display:inline-block;text-decoration:none;color:#3a2e26;font-family:Arial, Helvetica, sans-serif}
-.character{position:absolute;right:10px;bottom:10px;width:260px;height:260px;z-index:5}
-.character canvas{width:100%;height:100%;display:block}
-.float{position:absolute;width:22px;height:22px;pointer-events:none;animation:softFloat 4.5s ease-in-out infinite;opacity:0.9}
-@keyframes softFloat{0%,100%{transform:translateY(0px)}50%{transform:translateY(-10px)}}
-.f1{top:18px;right:22px}
-.f2{top:248px;right:18px;animation-delay:1s;width:21px}
-.f3{bottom:95px;left:22px;animation-delay:2s;width:20px}
+.github-btn{border:1.5px solid #3a2e26;border-radius:20px;padding:8px 18px;background:#fffdf5;display:inline-block;text-decoration:none;color:#3a2e26;font-family:Arial, Helvetica, sans-serif;margin-bottom:15px}
+.character{position:absolute;right:12px;bottom:8px;width:175px;height:175px;z-index:2}
+.character video{width:100%;height:100%;object-fit:contain;display:block}
+.float{position:absolute;width:22px;height:22px;animation:softFloat 5s ease-in-out infinite;opacity:0.85}
+@keyframes softFloat{0%,100%{transform:translateY(0px)}50%{transform:translateY(-12px)}}
+.f1{top:14px;left:18px}
+.f2{top:14px;right:18px;animation-delay:0.7s}
+.f3{top:185px;left:12px;animation-delay:1.4s}
+.f4{top:255px;right:12px;animation-delay:0.3s}
+.f5{top:395px;left:12px;animation-delay:1s;width:20px}
+.f6{bottom:200px;left:120px;animation-delay:1.8s;width:20px}
 .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);justify-content:center;align-items:center;z-index:20}
 .modal-box{background:#FFF8E8;padding:25px;border-radius:18px;max-width:380px;width:90%;border:2px solid #3a2e26;font-family:Arial, Helvetica, sans-serif}
 .close{float:right;cursor:pointer;font-size:20px}
@@ -42,49 +35,25 @@ h1.portfolio{text-align:center;font-family:Arial,sans-serif;font-weight:normal;m
 <img class="float f1" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
 <img class="float f2" src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
 <img class="float f3" src="https://cdn-icons-png.flaticon.com/512/300/300221.png">
+<img class="float f4" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+<img class="float f5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+<img class="float f6" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+
 <h1 class="portfolio">Portfolio</h1>
-<div class="info-box">
-<b>Binaya Minduni Jayasinghe Perera</b><br>
-Computer Science Undergraduate | NSBM Green University<br>
-Galle District, Southern Province | Sri Lanka.
-</div>
+<div class="info-box"><b>Binaya Minduni Jayasinghe Perera</b><br>Computer Science Undergraduate | NSBM Green University<br>Galle District, Southern Province | Sri Lanka.</div>
 <div class="skills-title">Skills</div>
-<div class="badges">
-<span class="badge">Python</span><span class="badge">OOP</span><span class="badge">GitHub</span><span class="badge">HTML</span><span class="badge">CSS</span>
-</div>
+<div class="badges"><span class="badge">Python</span><span class="badge">OOP</span><span class="badge">GitHub</span><span class="badge">HTML</span><span class="badge">CSS</span></div>
 <div class="cert-title">Certifications</div>
 <div class="cert-box" onclick="openBox('cisco')"><b>Python Essentials 2 - Cisco</b><br><small>Oct 2026</small></div>
 <div class="cert-box" onclick="openBox('hr')"><b>Python (Basic) - HackerRank</b><br><small>Oct 2026</small></div>
 <div class="github-title">Github Profile</div>
 <a class="github-btn" href="https://github.com/binayaminduni" target="_blank">GitHub</a>
-<div class="character">
-<canvas id="c"></canvas>
-<video id="v" autoplay loop muted playsinline crossorigin="anonymous" style="display:none"><source src="character.mp4.mp4" type="video/mp4"></video>
-</div>
+<div class="character"><video autoplay loop muted playsinline><source src="character.mp4.mp4" type="video/mp4"></video></div>
 </div>
 <div id="m" class="modal" onclick="closeBox()"><div class="modal-box" onclick="event.stopPropagation()"><span class="close" onclick="closeBox()">x</span><div id="body"></div></div></div>
 <script>
 function openBox(t){document.getElementById('m').style.display='flex';if(t=='cisco'){document.getElementById('body').innerHTML="<h3>Python Essentials 2</h3><p>Cisco Networking Academy</p><p><b>ID:</b> cf56f0ae-0bd3-4986-9302-48671bdc1ea6</p>"}else{document.getElementById('body').innerHTML="<h3>Python (Basic)</h3><p>HackerRank</p><p><b>ID:</b> 365FACE538FD</p><a href='https://www.hackerrank.com/certificates/365face538fd' target='_blank'>Verify</a>"}}
 function closeBox(){document.getElementById('m').style.display='none'}
-const v=document.getElementById('v');
-const canvas=document.getElementById('c');
-const ctx=canvas.getContext('2d');
-v.addEventListener('play',()=>{
-canvas.width=v.videoWidth;
-canvas.height=v.videoHeight;
-function draw(){
-if(v.paused||v.ended)return;
-ctx.drawImage(v,0,0);
-let f=ctx.getImageData(0,0,canvas.width,canvas.height);
-let d=f.data;
-for(let i=0;i<d.length;i+=4){
-if(d[i]>200&&d[i+1]>200&&d[i+2]>200){d[i+3]=0}
-}
-ctx.putImageData(f,0,0);
-requestAnimationFrame(draw);
-}
-draw();
-});
 </script>
 </body>
 </html>
